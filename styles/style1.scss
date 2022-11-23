@@ -1,0 +1,47 @@
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+$bool: false;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transform: 2s scale(.5);
+    &:hover{
+        transform: scale(.1);
+    }
+}
+.contern{
+    margin-top: 3em;
+    margin-left: 3em;
+display: flex;
+flex-wrap: wrap;
+width: 150px;
+height: 50px;
+border: #011c37 3px solid;
+background: rgba($color: #857e7e, $alpha: 1.0);
+border-radius: 25px;
+}
+.icon{
+    font-size: 23px;
+    margin-right: 2em;
+    margin-top: -.1em;
+width: 50px;
+height: 50px;
+border-radius: 25px;
+border: #acc6e0 3px solid;
+background: #d9e0e7;
+}
+.label{
+    font-size: 23px;
+color: #1d79d4;
+}
+.contern:hover{
+    background: #15DEA5;
+    $bool: true;
+    .icon{
+        background: red;
+    }
+}
